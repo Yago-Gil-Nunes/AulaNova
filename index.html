@@ -15,8 +15,11 @@
             background-color: black;
             /* podemos estilizar diretamente pelo (body: color white; ) */
         }
-        .button{
+        .buttonSend{
             background-color: green;
+        }
+        .buttonClear{
+            background-color: red;
         }
     </style>
 </head>
@@ -29,7 +32,8 @@
         <label style="color: red;" for="password">Senha:</label>
         <input id="password" type="password"/>
         <br />
-        <button class="button" type="submit" >Enviar</button>
+        <button class="buttonSend" type="submit" >Send</button>
+        <button class="buttonClear" type="reset" >clear</button>
     </form>
 </body>
 </html>
