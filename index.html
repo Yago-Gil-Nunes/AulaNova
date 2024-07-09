@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulários</title>
+    <style>
+        label{
+            color: white;
+        }
+        h1 {
+            color: white;
+        }
+        body {
+            background-color: black;
+            /* podemos estilizar diretamente pelo (body: color white; ) */
+        }
+        .button{
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
     <form>
         <label for="user">Usuario:</label>
         <input id="user" type="text"/>
-        <br />
-        <label for="password">Senha:</label>
+        <br /> 
+        <!--aqui foi feito uma estilização na propria label, ela nao foi modificada no body,pois o style feito aqui tem por ordem a preferencia-->
+        <label style="color: red;" for="password">Senha:</label>
         <input id="password" type="password"/>
+        <br />
+        <button class="button" type="submit" >Enviar</button>
     </form>
 </body>
 </html>
